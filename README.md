@@ -1,2 +1,2 @@
 # rockpaperscissors
-rockpaperscissors game created with javascript
+rockpaperscissors game created with java
