@@ -45,11 +45,17 @@ public class rockpaperscissors {
                 }
             }
 
-            System.out.println("Play Again? (y/n)");
-            String playAgainInput = scanner.nextLine();
-
-            if (!playAgainInput.equals("y")) {
-                playAgain = false;
+            while (true) {
+                System.out.println("Play Again? (y/n)");
+                String playAgainInput = scanner.nextLine();
+                if (playAgainInput.equals("y")) {
+                    break;
+                } else if (playAgainInput.equals("n")) {
+                    playAgain = false;
+                    break;
+                } else {
+                    System.out.println("Invalid input. Please enter 'y' or 'n'.");
+                }
             }
         }
     }
